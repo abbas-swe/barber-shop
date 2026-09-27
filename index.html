@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombian Barbershop & Beauty Salon | Sharp Cuts, Sharp Look</title>
+  <meta name="description" content="Premiere Colombian Barbershop & Beauty Salon. Precision fades, hot towel straight razor shaves, luxury hair styling, and beard sculpting. Proudly Women-Owned & Operated.">
+  <meta name="theme-color" content="#0c0d10">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'><path d='M6 3v6c0 2.97 2.16 5.43 5 5.91V17H8v2h8v-2h-3v-2.09c2.84-.48 5-2.94 5-5.91V3H6zm10 5H8V5h8v3z'/></svg>">
+
+  <!-- Google Fonts: Syne, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Live Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- Announcement Bar / Women-Owned Pride Banner -->
+  <div class="top-announcement-bar">
+    <div class="announcement-content">
+      <span class="badge-flag">🇨🇴</span>
+      <span class="announcement-text"><strong>Proudly Identifies as Women-Owned &amp; Operated</strong> • Authentic Colombian Craftsmanship &amp; Luxury Care</span>
+      <span class="announcement-highlight">Complimentary Colombian Tinto Espresso with Every Service ☕</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Colombian Barbershop and Beauty Salon">
+        <div class="logo-crest">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="crest-svg">
+            <path d="M20 2L36 10V22C36 30.5 29.2 37.2 20 39C10.8 37.2 4 30.5 4 22V10L20 2Z" stroke="url(#goldGradient)" stroke-width="2" fill="#14161f"/>
+            <path d="M14 15L26 27M26 15L14 27" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="20" cy="21" r="3" fill="#b81d24"/>
+            <defs>
+              <linearGradient id="goldGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F3E7C4"/>
+                <stop offset="0.5" stop-color="#D4AF37"/>
+                <stop offset="1" stop-color="#996515"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="brand-name">COLOMBIAN</span>
+          <span class="brand-sub">BARBERSHOP &amp; BEAUTY SALON</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" id="desktopNav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#experience" class="nav-link">The Experience</a></li>
+          <li><a href="#contact" class="nav-link">Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <a href="tel:5557892882" class="call-btn" title="Call directly">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span class="call-text">(555) 789-2882</span>
+        </a>
+        <a href="#booking" class="btn btn-primary nav-book-btn">
+          <span>Book Appointment</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-inner">
+        <ul class="mobile-nav-links">
+          <li><a href="#services" class="mobile-nav-link">Services &amp; Pricing</a></li>
+          <li><a href="#gallery" class="mobile-nav-link">Photo Gallery</a></li>
+          <li><a href="#about" class="mobile-nav-link">About Us &amp; Heritage</a></li>
+          <li><a href="#experience" class="mobile-nav-link">The Colombian Experience</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact &amp; Hours</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <div class="women-owned-pill">
+            <span class="star-icon">✦</span>
+            <span>Proudly Women-Owned Enterprise</span>
+          </div>
+          <a href="#booking" class="btn btn-primary btn-block mobile-drawer-btn">Book Your Cut &amp; Style</a>
+          <a href="tel:5557892882" class="drawer-call-link">Call: (555) 789-2882</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-wrapper">
+        <img src="assets/images/hero.jpg" alt="Colombian Barbershop & Beauty Salon Interior" class="hero-bg-img" id="heroBgImg">
+        <div class="hero-overlay"></div>
+        <div class="hero-glow-orb hero-glow-1"></div>
+        <div class="hero-glow-orb hero-glow-2"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Floating Live Heritage Badge -->
+        <div class="hero-tag-badge animate-on-scroll">
+          <span class="badge-accent-dot"></span>
+          <span class="badge-label">Bogot&aacute; Artistry &bull; Modern Master Grooming</span>
+          <span class="badge-separator">|</span>
+          <span class="badge-wo">Identifies as Women-Owned</span>
+        </div>
+
+        <h1 class="hero-title animate-on-scroll">
+          <span class="hero-eyebrow">Colombian Barbershop &amp; Beauty Salon</span>
+          <span class="hero-headline-main">Sharp Cuts,</span>
+          <span class="hero-headline-gradient">Sharp Look.</span>
+        </h1>
+
+        <p class="hero-description animate-on-scroll">
+          Where Colombian precision barbering meets luxury salon artistry. From immaculate skin fades and hot towel straight razor rituals to professional hair styling and transformative color treatments.
+        </p>
+
+        <!-- CTA Button Group -->
+        <div class="hero-actions animate-on-scroll">
+          <a href="#booking" class="btn btn-primary btn-large">
+            <span>Book Your Chair</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn btn-outline btn-large">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span>Explore Menu &amp; Rates</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges & Metrics Bar -->
+        <div class="hero-metrics-bar animate-on-scroll">
+          <div class="metric-item">
+            <div class="metric-number-wrapper">
+              <span class="metric-number" data-target="15">0</span><span class="metric-plus">+</span>
+            </div>
+            <span class="metric-label">Years Master Experience</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number-wrapper">
+              <span class="metric-number" data-target="4.9">0</span>
+              <span class="metric-star">&starf;</span>
+            </div>
+            <span class="metric-label">Google Rating (680+ Reviews)</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number-wrapper">
+              <span class="metric-number" data-target="14000">0</span><span class="metric-plus">+</span>
+            </div>
+            <span class="metric-label">Clients Styled to Perfection</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item women-metric-item">
+            <div class="metric-icon-wo">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>
+            </div>
+            <span class="metric-label-wo">100% Proudly Women-Owned</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#services" class="scroll-down-indicator" aria-label="Scroll to services">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">DISCOVER CRAFT</span>
+      </a>
+    </section>
+
+    <!-- LIVE MARQUEE TICKER -->
+    <div class="live-ticker-strip">
+      <div class="ticker-track">
+        <div class="ticker-content">
+          <span>PRECISION SKIN FADES</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>HOT TOWEL STRAIGHT RAZOR SHAVES</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>BEARD SCULPTING &amp; OIL THERAPY</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>WOMEN-OWNED &amp; OPERATED</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>LUXURY HAIR BLOWOUTS &amp; COLOR</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>AUTHENTIC COLOMBIAN TINTO ESPRESSO</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>VIP GROOMING PACKAGES</span>
+          <span class="ticker-dot">&#10022;</span>
+        </div>
+        <!-- Duplicate for infinite seamless scroll -->
+        <div class="ticker-content" aria-hidden="true">
+          <span>PRECISION SKIN FADES</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>HOT TOWEL STRAIGHT RAZOR SHAVES</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>BEARD SCULPTING &amp; OIL THERAPY</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>WOMEN-OWNED &amp; OPERATED</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>LUXURY HAIR BLOWOUTS &amp; COLOR</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>AUTHENTIC COLOMBIAN TINTO ESPRESSO</span>
+          <span class="ticker-dot">&#10022;</span>
+          <span>VIP GROOMING PACKAGES</span>
+          <span class="ticker-dot">&#10022;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-subtitle">ARTISANAL CUTS &amp; ELEVATED CARE</span>
+          <h2 class="section-title">Signature Services &amp; Rates</h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">
+            Every session begins with a personalized consultation and concludes with warm towel treatment, neck shave, and Colombian styling pomades.
+          </p>
+        </div>
+
+        <!-- Service Category Filter Tabs -->
+        <div class="services-filter-tabs animate-on-scroll">
+          <button class="filter-tab active" data-category="all">All Services</button>
+          <button class="filter-tab" data-category="barbershop">Haircuts &amp; Fades</button>
+          <button class="filter-tab" data-category="beard">Beards &amp; Shaves</button>
+          <button class="filter-tab" data-category="salon">Beauty Salon &amp; Hair</button>
+          <button class="filter-tab" data-category="combos">VIP Combos</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid" id="servicesGrid">
+
+          <!-- Service 1: The Executive Colombian Fade -->
+          <div class="service-card animate-on-scroll" data-category="barbershop">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">The Executive Colombian Fade</h3>
+                  <span class="service-time">45 Minutes &bull; Hot Lather Neck Finish</span>
+                </div>
+              </div>
+              <div class="service-price">$38</div>
+            </div>
+            <p class="service-description">
+              Custom precision skin fade, taper, or scissor cut. Styled with imported Colombian matte clay or high-shine pomade, finished with razor edge lineup.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag">Most Popular</span>
+              <button class="btn-book-service" data-service="The Executive Colombian Fade ($38)" data-price="38">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 2: Classic Hot Towel Straight Razor Shave -->
+          <div class="service-card animate-on-scroll" data-category="beard">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14l9-9 4 4-9 9z"/><path d="M14 7l3-3 4 4-3 3"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">Hot Towel Straight Razor Shave</h3>
+                  <span class="service-time">40 Minutes &bull; Eucalyptus Steam</span>
+                </div>
+              </div>
+              <div class="service-price">$35</div>
+            </div>
+            <p class="service-description">
+              Traditional multi-step treatment: botanical pre-shave oil, steamed eucalyptus hot towels, rich warm lather foam, and hand-honed razor glide.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag">Gentlemen's Classic</span>
+              <button class="btn-book-service" data-service="Hot Towel Straight Razor Shave ($35)" data-price="35">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 3: Colombian Signature Cut & Shave Combo -->
+          <div class="service-card featured-service-card animate-on-scroll" data-category="combos">
+            <div class="featured-ribbon">SIGNATURE EXPERIENCE</div>
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">Signature Cut &amp; Shave Combo</h3>
+                  <span class="service-time">75 Minutes &bull; Full Royalty Treatment</span>
+                </div>
+              </div>
+              <div class="service-price">$65</div>
+            </div>
+            <p class="service-description">
+              Our master cut tailored to your head shape, coupled with full straight razor beard sculpting, herbal steam towels, invigorating scalp massage, and coffee bar.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag gold-tag">Best Value</span>
+              <button class="btn-book-service" data-service="Signature Cut & Shave Combo ($65)" data-price="65">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 4: Beard Sculpting & Oil Therapy -->
+          <div class="service-card animate-on-scroll" data-category="beard">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4c0 3 4 8 4 8s4-5 4-8a4 4 0 0 0-4-4z"/><circle cx="12" cy="6" r="1"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">Beard Sculpting &amp; Oil Therapy</h3>
+                  <span class="service-time">30 Minutes &bull; Razor Cheek &amp; Neck Line</span>
+                </div>
+              </div>
+              <div class="service-price">$26</div>
+            </div>
+            <p class="service-description">
+              Freehand clipper trimming, length balance, straight razor outlining, followed by an organic argan and jojoba deep-conditioning beard massage.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag">Sharp Grooming</span>
+              <button class="btn-book-service" data-service="Beard Sculpting & Oil Therapy ($26)" data-price="26">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 5: Salon Blowout & Silk Press Treatment -->
+          <div class="service-card animate-on-scroll" data-category="salon">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V4z"/><path d="M18 8v4a6 6 0 0 1-6 6H4"/><path d="M7 15l-3 3 3 3"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">Salon Blowout &amp; Silk Finish</h3>
+                  <span class="service-time">60 Minutes &bull; Deep Nourish Wash</span>
+                </div>
+              </div>
+              <div class="service-price">$68</div>
+            </div>
+            <p class="service-description">
+              Invigorating shampoo with scalp massage, keratin-infused deep conditioning, round brush blowout, and thermal satin shine press for maximum volume and bounce.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag salon-tag">Beauty Salon</span>
+              <button class="btn-book-service" data-service="Salon Blowout & Silk Finish ($68)" data-price="68">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 6: Precision Edge-Up & Shape-Up -->
+          <div class="service-card animate-on-scroll" data-category="barbershop">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">Precision Edge-Up &amp; Shape-Up</h3>
+                  <span class="service-time">20 Minutes &bull; Razor Clean Finish</span>
+                </div>
+              </div>
+              <div class="service-price">$22</div>
+            </div>
+            <p class="service-description">
+              Crisp hairline lineup, temples, and neck perimeter shaping using cordless trimmers and straight razor enhancement for a surgically clean edge.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag">Quick Refresh</span>
+              <button class="btn-book-service" data-service="Precision Edge-Up & Shape-Up ($22)" data-price="22">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 7: Custom Balayage & Hair Gloss Treatment -->
+          <div class="service-card animate-on-scroll" data-category="salon">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">Custom Balayage &amp; Tone</h3>
+                  <span class="service-time">120 Minutes &bull; Consultation Required</span>
+                </div>
+              </div>
+              <div class="service-price">$135+</div>
+            </div>
+            <p class="service-description">
+              Hand-painted dimensional highlights designed to complement your skin tone, completed with customized gloss toner, bonding treatment, and blow dry styling.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag salon-tag">Beauty Salon</span>
+              <button class="btn-book-service" data-service="Custom Balayage & Tone ($135+)" data-price="135">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 8: The Royal VIP Colombian Experience -->
+          <div class="service-card animate-on-scroll" data-category="combos">
+            <div class="service-card-header">
+              <div class="service-title-group">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 7 6-7"/><path d="M2 5l5 2 5-4 5 4 5-2v14H2V5z"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-name">The Royal VIP Colombian Experience</h3>
+                  <span class="service-time">90 Minutes &bull; Ultimate Luxury</span>
+                </div>
+              </div>
+              <div class="service-price">$95</div>
+            </div>
+            <p class="service-description">
+              The supreme package: Master Cut, straight razor hot shave, purifying clay face mask, 10-minute scalp &amp; shoulder massage, ear/nose waxing, and Colombian reserve coffee.
+            </p>
+            <div class="service-card-footer">
+              <span class="service-tag gold-tag">VIP Gold</span>
+              <button class="btn-book-service" data-service="The Royal VIP Colombian Experience ($95)" data-price="95">
+                <span>Book This</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="services-callout animate-on-scroll">
+          <div class="callout-icon">☕</div>
+          <div class="callout-text">
+            <h4>Every Visit Includes Authentic Colombian Hospitality</h4>
+            <p>Savor freshly brewed artisanal Colombian Tinto espresso or infused sparkling water during your cut and styling session.</p>
+          </div>
+          <a href="#booking" class="btn btn-secondary">Reserve Your Spot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-subtitle">THE ARTISTRY BEHIND THE CHAIR</span>
+          <h2 class="section-title">Photo Gallery &amp; Shop Showcase</h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">
+            Explore our precision craft, warm upscale aesthetic, and the real transformations created by our passionate master stylists and barbers.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Buttons -->
+        <div class="gallery-filter-tabs animate-on-scroll">
+          <button class="gallery-tab active" data-filter="all">All Photos</button>
+          <button class="gallery-tab" data-filter="fade">Precision Fades</button>
+          <button class="gallery-tab" data-filter="shave">Classic Shaves</button>
+          <button class="gallery-tab" data-filter="salon">Beauty Salon</button>
+          <button class="gallery-tab" data-filter="lounge">Shop &amp; Lounge</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+
+          <!-- Item 1: Shop Interior Hero -->
+          <div class="gallery-card animate-on-scroll" data-category="lounge">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/hero.jpg" alt="Colombian Barbershop & Beauty Salon Main Lounge" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Shop Atmosphere</span>
+                <h4 class="gallery-item-title">Executive Leather Chairs &amp; Golden Ambiance</h4>
+                <p class="gallery-item-sub">Designed for ultimate relaxation and Colombian elegance.</p>
+                <button class="btn-lightbox-trigger" data-img="assets/images/hero.jpg" data-title="Executive Leather Chairs &amp; Golden Ambiance" data-desc="Our main shop lounge equipped with vintage gold-accented chairs, backlit architectural mirrors, and genuine Colombian warmth.">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>View Full Photo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Precision Fade -->
+          <div class="gallery-card animate-on-scroll" data-category="fade">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/fade.jpg" alt="Precision Mid-Skin Fade with Sculpted Beard" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Precision Cut</span>
+                <h4 class="gallery-item-title">Seamless Skin Fade &amp; Razor-Sharp Beard</h4>
+                <p class="gallery-item-sub">Surgical graduation and clean geometric contouring.</p>
+                <button class="btn-lightbox-trigger" data-img="assets/images/fade.jpg" data-title="Seamless Skin Fade &amp; Razor-Sharp Beard" data-desc="Master fade executed with foil shaver graduation, textured pompadour top, and pristine razor cheek line.">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>View Full Photo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Straight Razor Shave -->
+          <div class="gallery-card animate-on-scroll" data-category="shave">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/shave.jpg" alt="Traditional Hot Towel Straight Razor Shaving" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Traditional Shave</span>
+                <h4 class="gallery-item-title">Authentic Hot Towel &amp; Straight Razor Ritual</h4>
+                <p class="gallery-item-sub">Steamed herbal compress and velvet lather.</p>
+                <button class="btn-lightbox-trigger" data-img="assets/images/shave.jpg" data-title="Authentic Hot Towel &amp; Straight Razor Ritual" data-desc="The timeless classic razor shave: hand-whipped warm lather, single-blade chrome razor, and cool soothing aftershave tonic.">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>View Full Photo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Women-Owned Leadership & Founder -->
+          <div class="gallery-card animate-on-scroll" data-category="lounge">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/women-owner.jpg" alt="Colombian Master Stylist and Salon Director" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Women-Owned Founder</span>
+                <h4 class="gallery-item-title">Liliana &amp; The Master Styling Team</h4>
+                <p class="gallery-item-sub">Leading with vision, passion, and uncompromising quality.</p>
+                <button class="btn-lightbox-trigger" data-img="assets/images/women-owner.jpg" data-title="Liliana &amp; The Master Styling Team" data-desc="Proudly women-founded and led. Our founder Liliana combines over 15 years of world-class barbering and cosmetology experience.">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>View Full Photo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Salon Hair Styling & Blowout -->
+          <div class="gallery-card animate-on-scroll" data-category="salon">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/salon.jpg" alt="Upscale Hair Blowout and Styling" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">Beauty Salon</span>
+                <h4 class="gallery-item-title">Silk Blowout &amp; Radiant Dimensional Styling</h4>
+                <p class="gallery-item-sub">Glossy finish, healthy bounce, and bespoke color care.</p>
+                <button class="btn-lightbox-trigger" data-img="assets/images/salon.jpg" data-title="Silk Blowout &amp; Radiant Dimensional Styling" data-desc="Our beauty salon wing caters to women and men looking for extraordinary blowouts, balayage, keratin treatments, and precision hair styling.">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>View Full Photo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Colombian Tinto Espresso Bar -->
+          <div class="gallery-card animate-on-scroll" data-category="lounge">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/coffee.jpg" alt="Artisanal Colombian Tinto Espresso and Grooming Tools" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="gallery-category-badge">The Experience</span>
+                <h4 class="gallery-item-title">Artisanal Colombian Coffee Bar</h4>
+                <p class="gallery-item-sub">Freshly brewed Colombian single-origin coffee on the house.</p>
+                <button class="btn-lightbox-trigger" data-img="assets/images/coffee.jpg" data-title="Artisanal Colombian Coffee Bar" data-desc="Every client is welcomed with rich, aromatic Colombian tinto espresso or sparkling chilled water in our relaxing lounge.">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>View Full Photo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US & WOMEN-OWNED HIGHLIGHT SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Visual Composition with Women-Owned Official Seal -->
+          <div class="about-visual animate-on-scroll">
+            <div class="about-img-frame">
+              <img src="assets/images/women-owner.jpg" alt="Liliana - Founder and Master Stylist" class="about-main-img">
+              <div class="about-accent-frame"></div>
+            </div>
+
+            <!-- Official Gold Seal: Identifies as Women-Owned -->
+            <div class="women-owned-seal-card">
+              <div class="seal-icon-circle">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="seal-svg">
+                  <circle cx="20" cy="20" r="18" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="3 2"/>
+                  <circle cx="20" cy="20" r="15" fill="#14161f" stroke="#D4AF37" stroke-width="1"/>
+                  <path d="M20 10V22M15 17H25" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="20" cy="20" r="6" stroke="#D4AF37" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div class="seal-text-group">
+                <span class="seal-title">PROUDLY IDENTIFIES AS</span>
+                <span class="seal-highlight">WOMEN-OWNED</span>
+                <span class="seal-caption">Certified Independent Enterprise</span>
+              </div>
+            </div>
+
+            <!-- Experience Badge -->
+            <div class="about-float-badge">
+              <span class="float-num">15+</span>
+              <span class="float-text">Years of Colombian Excellence</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Story & Philosophy -->
+          <div class="about-content animate-on-scroll">
+            <div class="section-tag">
+              <span class="tag-flag">🇨🇴</span>
+              <span>HERITAGE, PASSION &amp; LEADERSHIP</span>
+            </div>
+            <h2 class="about-title">
+              Crafted With Colombian Heart.<br>
+              <span class="text-gold-gradient">Empowered by Women Leadership.</span>
+            </h2>
+            <div class="gold-divider left-aligned"></div>
+
+            <p class="about-text-lead">
+              Founded by master barber and cosmetologist Liliana, <strong>Colombian Barbershop &amp; Beauty Salon</strong> was created to bring the warmth, precision, and world-renowned artistic grooming of Colombia into an elevated, modern sanctuary.
+            </p>
+
+            <p class="about-text-body">
+              We proudly identify as a <strong>women-owned business</strong>, breaking conventions in the traditional grooming space. Our studio bridges the gap between a high-caliber gentleman's barbershop and a lavish beauty salon—offering an inclusive space where men, women, and families experience genuine craftsmanship, immaculate attention to detail, and authentic Latin warmth.
+            </p>
+
+            <!-- Value Pillars -->
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h4 class="pillar-title">Uncompromising Precision</h4>
+                  <p class="pillar-desc">Every fade, scissor contour, and razor stroke is executed to perfection.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div>
+                  <h4 class="pillar-title">Warm Colombian Hospitality</h4>
+                  <p class="pillar-desc">Fresh tinto coffee, genuine camaraderie, and relaxation from the moment you enter.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                </div>
+                <div>
+                  <h4 class="pillar-title">Dual Sanctuary for Men &amp; Women</h4>
+                  <p class="pillar-desc">From sharp fades and beard trims to silk blowouts and balayage under one roof.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Founder Quote -->
+            <div class="founder-quote">
+              <p>&ldquo;A great cut is more than just style—it’s confidence, heritage, and the feeling that you are ready to conquer the world.&rdquo;</p>
+              <div class="founder-author">
+                <strong>Liliana Gaviria</strong> &mdash; Founder &amp; Master Director
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE COLOMBIAN EXPERIENCE HIGHLIGHTS -->
+    <section class="experience-section section-padding" id="experience">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-subtitle">MORE THAN A HAIRCUT</span>
+          <h2 class="section-title">The Colombian Experience</h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">
+            We've curated every touchpoint of your visit to offer unparalleled comfort, warmth, and luxury.
+          </p>
+        </div>
+
+        <div class="experience-cards-grid">
+          <div class="exp-card animate-on-scroll">
+            <div class="exp-card-number">01</div>
+            <div class="exp-icon-box">☕</div>
+            <h3 class="exp-title">Complimentary Tinto Bar</h3>
+            <p class="exp-text">Enjoy our signature freshly brewed dark Colombian roast coffee sweetened with panela or black, served on polished wood counters.</p>
+          </div>
+
+          <div class="exp-card animate-on-scroll">
+            <div class="exp-card-number">02</div>
+            <div class="exp-icon-box">🌿</div>
+            <h3 class="exp-title">Eucalyptus Hot Towels</h3>
+            <p class="exp-text">Relaxing steam towels infused with pure natural essential oils soothe the skin and open pores before every precision straight razor shave.</p>
+          </div>
+
+          <div class="exp-card animate-on-scroll">
+            <div class="exp-card-number">03</div>
+            <div class="exp-icon-box">✂️</div>
+            <h3 class="exp-title">Master Consultation</h3>
+            <p class="exp-text">We study your face shape, hair density, and lifestyle before clipping a single strand to guarantee a look that lasts for weeks.</p>
+          </div>
+
+          <div class="exp-card animate-on-scroll">
+            <div class="exp-card-number">04</div>
+            <div class="exp-icon-box">👑</div>
+            <h3 class="exp-title">Dual Salon &amp; Barber Stations</h3>
+            <p class="exp-text">Dedicated zones customized for male grooming and full beauty salon services, accommodating individuals, couples, and families alike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / SOCIAL PROOF -->
+    <section class="testimonials-section section-padding">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-subtitle">CLIENT REVIEWS</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <div class="gold-divider"></div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <p class="testimonial-quote">&ldquo;Best skin fade I have ever received in my life. Liliana and her team know exactly what they’re doing. The Colombian coffee and hot towel shave made it a full VIP experience.&rdquo;</p>
+            <div class="client-meta">
+              <div class="client-avatar">MR</div>
+              <div>
+                <strong class="client-name">Mateo Rodriguez</strong>
+                <span class="client-detail">Regular Client &bull; Fade &amp; Beard</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <p class="testimonial-quote">&ldquo;I love that this salon is women-owned! I got a full blowout and hair coloring while my husband had his beard sculpted. The atmosphere is upscale, clean, and welcoming.&rdquo;</p>
+            <div class="client-meta">
+              <div class="client-avatar">SC</div>
+              <div>
+                <strong class="client-name">Sofia Castillo</strong>
+                <span class="client-detail">Verified Reviewer &bull; Salon Styling</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll">
+            <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+            <p class="testimonial-quote">&ldquo;Attention to detail is on another level. Straight razor lines are sharp as a razor can get. Clean tools, great music, and friendly staff. 10/10 recommend.&rdquo;</p>
+            <div class="client-meta">
+              <div class="client-avatar">DA</div>
+              <div>
+                <strong class="client-name">David Alvarez</strong>
+                <span class="client-detail">Local Guide &bull; Royal VIP Package</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING & CONTACT SECTION -->
+    <section class="booking-section section-padding" id="booking">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-subtitle">RESERVE YOUR EXPERIENCE</span>
+          <h2 class="section-title">Book an Appointment &amp; Visit Us</h2>
+          <div class="gold-divider"></div>
+          <p class="section-desc">
+            Appointments recommended for guaranteed seating. Walk-ins are always welcomed subject to chair availability.
+          </p>
+        </div>
+
+        <div class="booking-grid">
+          <!-- Left: Interactive Booking Form -->
+          <div class="booking-form-card animate-on-scroll">
+            <div class="form-header">
+              <h3 class="form-title">Select Your Session</h3>
+              <p class="form-sub">Instant confirmation &bull; No prepayment required</p>
+            </div>
+
+            <form id="appointmentForm" class="appointment-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="bookingService">Select Service <span class="required">*</span></label>
+                  <select id="bookingService" name="service" required>
+                    <option value="">-- Choose a Service --</option>
+                    <option value="The Executive Colombian Fade ($38)" data-price="38">The Executive Colombian Fade - $38</option>
+                    <option value="Hot Towel Straight Razor Shave ($35)" data-price="35">Hot Towel Straight Razor Shave - $35</option>
+                    <option value="Signature Cut & Shave Combo ($65)" data-price="65">Signature Cut &amp; Shave Combo - $65</option>
+                    <option value="Beard Sculpting & Oil Therapy ($26)" data-price="26">Beard Sculpting &amp; Oil Therapy - $26</option>
+                    <option value="Salon Blowout & Silk Finish ($68)" data-price="68">Salon Blowout &amp; Silk Finish - $68</option>
+                    <option value="Precision Edge-Up & Shape-Up ($22)" data-price="22">Precision Edge-Up &amp; Shape-Up - $22</option>
+                    <option value="Custom Balayage & Tone ($135+)" data-price="135">Custom Balayage &amp; Tone - $135+</option>
+                    <option value="The Royal VIP Colombian Experience ($95)" data-price="95">The Royal VIP Colombian Experience - $95</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookingStylist">Preferred Specialist</label>
+                  <select id="bookingStylist" name="stylist">
+                    <option value="First Available Master">First Available Master Artist</option>
+                    <option value="Liliana - Master Stylist & Owner">Liliana (Master Director &amp; Owner)</option>
+                    <option value="Mateo - Skin Fade Specialist">Mateo (Skin Fade &amp; Lineup Specialist)</option>
+                    <option value="Carlos - Traditional Razor Barber">Carlos (Traditional Razor Shave Barber)</option>
+                    <option value="Valentina - Colorist & Blowout Artist">Valentina (Colorist &amp; Blowout Artist)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="bookingDate">Date <span class="required">*</span></label>
+                  <input type="date" id="bookingDate" name="date" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="bookingTime">Preferred Time <span class="required">*</span></label>
+                  <select id="bookingTime" name="time" required>
+                    <option value="">-- Choose Time Slot --</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                    <option value="05:00 PM">05:00 PM</option>
+                    <option value="06:00 PM">06:00 PM</option>
+                    <option value="07:00 PM">07:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="clientName">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="clientName" name="name" placeholder="e.g. Sebastian Gomez" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientPhone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="clientPhone" name="phone" placeholder="(555) 000-0000" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="clientNotes">Special Requests or Hair Notes</label>
+                <textarea id="clientNotes" name="notes" rows="2" placeholder="e.g. Skin fade with beard blend, prefer extra hot towel..."></textarea>
+              </div>
+
+              <div class="booking-summary-box" id="bookingSummaryBox">
+                <div class="summary-line">
+                  <span>Selected Service:</span>
+                  <span id="summaryServiceText" class="text-gold">Please select service above</span>
+                </div>
+                <div class="summary-line">
+                  <span>Estimated Total:</span>
+                  <span id="summaryPriceText" class="text-white font-bold">$0</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-booking-btn" id="submitBookingBtn">
+                <span>Confirm Appointment Booking</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Contact, Live Hours & Location Details -->
+          <div class="contact-info-card animate-on-scroll" id="contact">
+            <div class="contact-card-inner">
+              <div class="location-header">
+                <div class="live-status-pill" id="liveStatusPill">
+                  <span class="live-status-dot"></span>
+                  <span class="live-status-text" id="liveStatusText">Checking hours...</span>
+                </div>
+                <h3 class="contact-card-title">Shop Location &amp; Contact</h3>
+              </div>
+
+              <div class="contact-details-list">
+                <!-- Address -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="contact-heading">Shop Address</h4>
+                    <p class="contact-val">742 Calle Grande Blvd, Suite 104<br>Metro Arts District, FL 33139</p>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="contact-link">Get Driving Directions &rarr;</a>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <h4 class="contact-heading">Direct Phone &amp; Text</h4>
+                    <p class="contact-val"><a href="tel:5557892882" class="phone-link">(555) 789-2882</a></p>
+                    <span class="contact-sub">Call or text for immediate appointments</span>
+                  </div>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <div class="hours-group">
+                    <h4 class="contact-heading">Operating Hours</h4>
+                    <ul class="hours-list">
+                      <li class="hours-row">
+                        <span>Monday &ndash; Friday:</span>
+                        <strong>9:00 AM &ndash; 8:00 PM</strong>
+                      </li>
+                      <li class="hours-row">
+                        <span>Saturday:</span>
+                        <strong>8:30 AM &ndash; 7:30 PM</strong>
+                      </li>
+                      <li class="hours-row">
+                        <span>Sunday:</span>
+                        <strong>10:00 AM &ndash; 5:00 PM</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map Visual Mockup Card -->
+              <div class="map-card-wrapper">
+                <div class="map-mockup">
+                  <div class="map-grid-lines"></div>
+                  <div class="map-marker-pulse">
+                    <div class="marker-dot"></div>
+                    <div class="marker-ring"></div>
+                  </div>
+                  <div class="map-badge-overlay">
+                    <strong>Colombian Barbershop</strong>
+                    <span>Calle Grande &amp; 7th Ave</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand & Women-Owned Declaration -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <svg viewBox="0 0 40 40" width="32" height="32" fill="none">
+              <path d="M20 2L36 10V22C36 30.5 29.2 37.2 20 39C10.8 37.2 4 30.5 4 22V10L20 2Z" stroke="#D4AF37" stroke-width="2" fill="#14161f"/>
+              <path d="M14 15L26 27M26 15L14 27" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <div class="footer-logo-text">
+              <span class="f-brand">COLOMBIAN</span>
+              <span class="f-sub">BARBERSHOP &amp; BEAUTY SALON</span>
+            </div>
+          </div>
+
+          <p class="footer-tagline">&ldquo;Sharp Cuts, Sharp Look. Crafted With Colombian Heart.&rdquo;</p>
+
+          <!-- Women-Owned Official Footer Badge -->
+          <div class="footer-women-owned-badge">
+            <div class="badge-seal-mini">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#D4AF37" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>
+            </div>
+            <div class="badge-mini-text">
+              <strong>Identifies as Women-Owned</strong>
+              <span>Independent &bull; Latino Heritage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services &amp; Pricing</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#about">About Our Story</a></li>
+            <li><a href="#experience">The Colombian Experience</a></li>
+            <li><a href="#booking">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Services -->
+        <div class="footer-col">
+          <h4 class="footer-title">Popular Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Executive Colombian Fade</a></li>
+            <li><a href="#services">Hot Towel Razor Shave</a></li>
+            <li><a href="#services">Beard Sculpting &amp; Oil</a></li>
+            <li><a href="#services">Salon Silk Blowout</a></li>
+            <li><a href="#services">Balayage &amp; Color</a></li>
+            <li><a href="#services">VIP Royalty Combo</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media & Contact -->
+        <div class="footer-col">
+          <h4 class="footer-title">Connect &amp; Social</h4>
+          <p class="footer-social-desc">Follow our daily transformations, master fade tutorials, and salon updates:</p>
+          
+          <div class="social-icon-row">
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Visit our Facebook page">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <!-- TikTok -->
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Watch our TikTok videos">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .57.04.84.11V9.41a6.34 6.34 0 0 0-5.74 6.32 6.35 6.35 0 0 0 6.35 6.35 6.35 6.35 0 0 0 6.34-6.35V9.43a8.16 8.16 0 0 0 4.95 1.68V7.65a4.79 4.79 0 0 1-2.58-.96z"/></svg>
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Subscribe to our YouTube channel">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/15557892882" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Chat with us on WhatsApp">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+
+          <div class="footer-callout-phone">
+            <span>Direct Reservations:</span>
+            <a href="tel:5557892882">(555) 789-2882</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> Colombian Barbershop &amp; Beauty Salon. All Rights Reserved. Proudly Women-Owned.
+        </div>
+        <div class="footer-badges-bottom">
+          <span>🇨🇴 Colombian Heritage</span>
+          <span class="sep">&bull;</span>
+          <span>Clean &amp; Sanitized Tools Guaranteed</span>
+          <span class="sep">&bull;</span>
+          <span>Walk-ins Welcome</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL (PHOTO GALLERY) -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Photo Preview">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close photo preview">&times;</button>
+      <div class="lightbox-img-box">
+        <img src="" alt="" id="lightboxImg">
+      </div>
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+        <a href="#booking" class="btn btn-primary lightbox-book-btn" id="lightboxBookBtn">Book This Look</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING SUCCESS MODAL -->
+  <div class="booking-modal" id="bookingSuccessModal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" id="bookingModalBackdrop"></div>
+    <div class="modal-card">
+      <div class="modal-check-circle">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 class="modal-title">Appointment Confirmed!</h3>
+      <p class="modal-subtitle">We have reserved your chair at Colombian Barbershop &amp; Beauty Salon.</p>
+
+      <div class="confirmation-details-box">
+        <div class="conf-row">
+          <span>Client Name:</span>
+          <strong id="confClientName">Sebastian Gomez</strong>
+        </div>
+        <div class="conf-row">
+          <span>Service:</span>
+          <strong id="confService">The Executive Colombian Fade</strong>
+        </div>
+        <div class="conf-row">
+          <span>Specialist:</span>
+          <strong id="confStylist">Liliana - Master Director</strong>
+        </div>
+        <div class="conf-row">
+          <span>Date &amp; Time:</span>
+          <strong id="confDateTime">Sept 28, 2026 at 11:00 AM</strong>
+        </div>
+        <div class="conf-row">
+          <span>Address:</span>
+          <span>742 Calle Grande Blvd, Suite 104</span>
+        </div>
+      </div>
+
+      <p class="modal-note">A confirmation SMS has been dispatched to your phone. Complimentary Colombian coffee will be prepared for your arrival!</p>
+
+      <button class="btn btn-primary btn-block modal-close-btn" id="bookingModalCloseBtn">Done &amp; Return</button>
+    </div>
+  </div>
+
+  <!-- FLOATING QUICK ACTIONS (Mobile & Desktop) -->
+  <aside class="floating-quick-bar">
+    <a href="https://wa.me/15557892882" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="float-tooltip">Chat With Us</span>
+    </a>
+    <button class="float-btn float-top" id="backToTopBtn" title="Back to top" aria-label="Scroll back to top">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+  </aside>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
